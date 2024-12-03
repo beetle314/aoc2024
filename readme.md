@@ -1,0 +1,1 @@
+Als jullie deze code willen draaien, installeer dan `advent-of-code-data` en zet de environment variable `AOC_SESSION` naar de waarde van je cookie. En je kunt aan de slag!
