@@ -70,6 +70,7 @@ def main():
 
     # Verify the example for part A
     guess = str(test_a(puzzle.input_data))
+    print(f'Guess A: {guess:>10}')
 
     if puzzle.answered_a:
         assert puzzle.answer_a == guess, puzzle.answer_a
