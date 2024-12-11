@@ -34,10 +34,12 @@ def run(number, num_iter):
 
 
 def test_a(data):
+    run.cache_clear()
     return sum(run(int(n), 25) for n in data.split())
 
 
 def test_b(data):
+    run.cache_clear()
     return sum(run(int(n), 75) for n in data.split())
 
 
@@ -104,7 +106,7 @@ def main():
         stats.sort_stats('tottime')
         stats.print_stats(10)
 
-        N = int(1E4)
+        N = 100
         print(min(timeit.repeat('test_b(puzzle.input_data)', globals=globals(), number=N)) / N)
 
 
